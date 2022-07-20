@@ -79,7 +79,7 @@ function finalizadoAdjudicadoTransform(obj) {
             case "SUB_MODALIDAD":
             case "SUB MODALIDAD":                       newObj['sub_modalidad'] = safeToString(obj[key]); break;
             case "TIPO_ENTIDAD":
-            case "TIPO DE ENTIDAD":                     newObj['tipo_entidad'] = safeToString(obj); break;
+            case "TIPO DE ENTIDAD":                     newObj['tipo_entidad'] = safeToString(obj[key]); break;
             case "TIPO_ENTIDAD_PADRE":
             case "TIPO DE ENTIDAD PADRE":               newObj['tipo_entidad_padre'] = safeToString(obj[key]); break;
             case "TIPO_CONCURSO":                       newObj['tipo_concurso'] = safeToString(obj[key]); break;
