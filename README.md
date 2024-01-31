@@ -18,7 +18,7 @@ npm install
 ## Parameters
 
 ```
---transform     -t      finalizado_anulado | finalizado_desierto | finalizado_adjudicado | terminado_adjudicado | publicados
+--transform     -t      finalizado_anulado | finalizado_desierto | finalizado_adjudicado | terminado_adjudicado | publicados | 2023_adjudicado | 2023_anulado | 2023_desierto
 ```
 
 ## Data
