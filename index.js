@@ -52,7 +52,7 @@ process.stdin
     }
 }))
 .pipe(JSONStream.stringify(false))
-// .pipe(process.stdout);
+.pipe(process.stdout);
 
 process.stdin.on('end', () => {
   process.stdout.write('\n');
