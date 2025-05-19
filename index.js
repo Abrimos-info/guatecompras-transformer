@@ -95,7 +95,7 @@ function contractTransform(obj, type) {
 
             case "DESCRIPCION":
             case "DESCRIPCIÓN":
-            case "descripción":                         newObj['descripcion'] = safeToString(obj[key]); break;
+            case "descripción":                         newObj['descripcion'] = removeBreaks(safeToString(obj[key])); break;
 
             case "MODALIDAD":
             case "modalidad":                           newObj['modalidad'] = safeToString(obj[key]); break;
@@ -518,6 +518,10 @@ function removeNullFields(object) {
         if(object[key] == null) delete object[key];
     } )
     return object;
+}
+
+function removeBreaks(str) {
+    return str.replace(/\<br\s+\/\>/g, '');
 }
 
 function safeToString(value) {
